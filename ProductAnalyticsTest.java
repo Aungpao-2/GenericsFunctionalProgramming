@@ -1,22 +1,28 @@
 import java.util.List;
 
-public class ProductAnalyticsTest {
+public class ProductAnalyticsTest 
+{
 
     private static int passedCount = 0;
     private static int failedCount = 0;
 
     // Helper method for checking conditions
-    private static void check(String testName, boolean condition) {
-        if (condition) {
+    private static void check(String testName, boolean condition) 
+    {
+        if (condition) 
+        {
             System.out.println("PASSED: " + testName);
             passedCount++;
-        } else {
+        } 
+        else 
+        {
             System.out.println("FAILED: " + testName);
             failedCount++;
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         // --- Setup ---
         List<Product> products = List.of(
             new Product("p1", "Laptop", "Electronics", 1200.0, 10),
